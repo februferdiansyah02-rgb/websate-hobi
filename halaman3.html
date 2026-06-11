@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:linear-gradient(135deg,#000000,#312e81);
+            color:white;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            padding:30px;
+        }
+
+        h1{
+            margin-bottom:30px;
+            text-transform:uppercase;
+        }
+
+        .kotak{
+            width:300px;
+            border-radius:20px;
+            background:rgba(255,255,255,0.1);
+            backdrop-filter:blur(10px);
+            -webkit-backdrop-filter:blur(10px);
+            border:1px solid rgba(255,255,255,0.2);
+            overflow:hidden;
+            transition:0.4s ease;
+            margin-bottom:30px;
+        }
+
+        .kotak:hover{
+            transform:translateY(-10px) scale(1.05);
+        }
+
+        .kotak img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .tulisan{
+            padding:20px;
+            text-align:center;
+        }
+
+        .tulisan h2{
+            color:white;
+            font-size:20px;
+        }
+
+        .tentang{
+            max-width:600px;
+            text-align:center;
+            line-height:1.8;
+            margin-bottom:30px;
+        }
+
+        .tentang h2{
+            margin-bottom:15px;
+        }
+
+        .tombol{
+            display: flex;
+            justify-content: center;
+            gap:15px;
+            flex-wrap: wrap;
+        }
+
+        .button{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:white;
+            color:black;
+            text-decoration:none;
+            border-radius:30px;
+            font-weight:bold;
+            transition:0.3s;
+        }
+
+        .button:hover{
+            background:#ddd;
+            transform:translateY(-3px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Perkenalan</h1>
+
+    <div class="kotak">
+        <img src="pp.jpeg" alt="Foto Profil">
+
+        <div class="tulisan">
+            <h2>Halo, nama saya Febru Ferdiansyah</h2>
+        </div>
+    </div>
+
+    <div class="tentang">
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Halo, saya masih mahasiswa.
+            <mark>Hobi saya bermain game dan saya juga penggemar otomotif.</mark>
+        </p>
+
+        <br>
+
+        <p>
+            Saya berasal dari <u>Pekanbaru, Provinsi Riau</u>.
+            Makanan yang saya sukai adalah <i>gorengan dan roti</i>,
+            tetapi saya kurang menyukai <b>sayuran dan makanan bergulai.</b>
+        </p>
+
+        <br>
+
+        <p>
+            Saya adalah mahasiswa Ilmu Komputer di
+            <strong>CAKRAWALA UNIVERSITY</strong>.
+        </p>
+    </div>
+
+    <div class="tombol">
+        <a href="halaman4.html" class="button"><b>MY FILM</b></a>
+        <a href="index.html" class="button"><b>BALIK BERANDA</b></a>
+        <a href="halaman2.html" class="button"><b>MY HOBY</b></a>
+    </div>
+
+</body>
+</html>
