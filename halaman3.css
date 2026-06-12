@@ -1,0 +1,138 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+min-height:100vh;
+font-family:'Segoe UI',sans-serif;
+background:
+radial-gradient(circle at top left,#4338ca,transparent 40%),
+radial-gradient(circle at bottom right,#06b6d4,transparent 40%),
+linear-gradient(135deg,#050816,#0f172a);
+color:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:50px 20px;
+overflow-x:hidden;
+}
+
+h1{
+text-align: center;
+ font-size:clamp(50px,8vw,100px);
+font-family: 'Anton',sans-serif;
+text-transform: uppercase;
+letter-spacing: 8px;
+color: white;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+.kotak{
+width:min(350px,90%);
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.18);
+border-radius:28px;
+overflow:hidden;
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+box-shadow:0 20px 50px rgba(0,0,0,.4);
+transition:.5s;
+position:relative;
+margin-bottom:40px;
+margin-top: 30px;
+}
+
+.kotak::before{
+content:"";
+position:absolute;
+inset:0;
+background:linear-gradient(120deg,transparent,rgba(255,255,255,.12),transparent);
+transform:translateX(-100%);
+transition:.8s;
+}
+
+.kotak:hover::before{
+transform:translateX(100%);
+}
+
+.kotak:hover{
+transform:translateY(-15px) scale(1.03);
+box-shadow:0 30px 80px rgba(59,130,246,.35);
+}
+
+.kotak img{
+width:100%;
+height:300px;
+object-fit:cover;
+transition:.6s;
+}
+
+.kotak:hover img{
+transform:scale(1.08);
+}
+
+.tulisan{
+padding:28px;
+text-align:center;
+}
+
+.tulisan h2{
+font-size:28px;
+margin-bottom:10px;
+color:#0afff7;
+}
+
+.tulisan p{
+color:#d1d5db;
+line-height:1.8;
+}
+
+.tentang{
+max-width:750px;
+text-align:center;
+line-height:2;
+font-size:18px;
+color:#dbeafe;
+background:rgba(255,255,255,.05);
+padding:30px;
+border-radius:24px;
+backdrop-filter:blur(12px);
+margin-bottom:40px;
+}
+
+.tentang h2{
+margin-bottom:15px;
+}
+
+.tombol{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.button{
+display:inline-block;
+padding:14px 35px;
+border-radius:999px;
+text-decoration:none;
+color:white;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+font-weight:bold;
+transition:.4s;
+box-shadow:0 10px 30px rgba(59,130,246,.3);
+}
+
+.button:hover{
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 20px 50px rgba(59,130,246,.5);
+}
+
+@keyframes fade{
+from{opacity:0;transform:translateY(-20px);}
+to{opacity:1;transform:translateY(0);}
+}
+
