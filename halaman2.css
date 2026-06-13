@@ -44,7 +44,7 @@ h1{
 
 .card{
     width:320px;
-    background:rgba(255,255,255,0.1);
+    background:rgba(0, 225, 225, 0.301);
     backdrop-filter:blur(10px);
     border:1px solid rgba(255,255,255,0.2);
     border-radius:20px;
@@ -99,7 +99,6 @@ border-radius:30px;
 font-weight:bold;
 transition:.3s;
 margin:0;
-box-shadow: 0 10px 30px rgba(255, 255, 255, 0.466);
 }
 
 .tekan:hover{
